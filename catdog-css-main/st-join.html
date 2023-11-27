@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>스타일리스트 회원가입</title>
+</head>
+
+<body>
+    <!-- 웹버전 일때 컨테이너 -->
+    <div class="web-container">
+        <!-- 앱 컨테이너 -->
+        <div class="cd-container bg-white bg-dogs">
+            <!-- 모달 알림창 -->
+            <div id="modalAlert" class="modal-alert hidden">
+                <div class="modal-body">
+                    <div class="modal-text">
+                        <h2>스타일리스트</h2>
+                        <p>회원가입 하시겠습니까?</p>
+                    </div>
+                    <div class="modal-btns">
+                        <button id="cancleBtn" class="small-btn btn-gray btn-text">취소</button>
+                        <button class="small-btn"><a href="st-mypage.html" class="btn-text">가입하기</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 메인 컨텐트 -->
+            <main class="cd-main">
+
+                <!-- 로고 -->
+                <section class="main-logo">
+                    <img src="img/logo/logo_color.png" alt="댕냥꽁냥 로고" />
+                    <span class="main-logo-text">스타일리스트 회원가입</span>
+                </section>
+
+                <!-- 폼 -->
+                <section class="form-section">
+                    <form action="#" method="post" class="form-css">
+                        <div class="form-container">
+                            <!-- 인풋 모여있는 컨테이너 -->
+                            <div class="input-container">
+
+                                <input type="text" id="stName" name="stName" placeholder="이름" class="input-text">
+
+                                <!-- 중복확인 버튼 있음 -->
+                                <div class="duplication-check">
+                                    <input type="text" id="stId" name="stId" placeholder="아이디" class="input-text">
+                                    <button class="duplication-btn small-btn">중복확인</button>
+                                </div>
+
+                                <input type="text" id="nomal-password" name="nomal-password" placeholder="닉네임"
+                                    class="input-text">
+
+                                <input type="password" id="password" name="password" placeholder="비밀번호"
+                                    class="input-text">
+                                <input type="password" id="passwordCheck" name="passwordCheck" placeholder="비밀번호 확인"
+                                    class="input-text">
+                                
+                                <!-- 로그인/ 로그아웃/ 계정찾기/ 비밀번호 찾기  -->
+                                <div class="login-tools">
+                                    <div></div>
+                                    <div>
+                                        <span class="logintool-text"><a href="st-login.html">로그인</a></span>
+                                        <span class="logintool-text"><a href="cl-findid.html">계정찾기</a></span>
+                                        <span class="logintool-text"><a href="cl-findpassword.html">비밀번호 찾기</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- submit 버튼 -->
+                            <div class="button-container">
+                                <button id="submit-btn" type="submit" class="main-btn btn-text magin-t-1">회원 가입</button>
+                                <div class="main-btn kakao-login-btn"><i class="fas fa-comment"></i>카카오톡 로그인</div>
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <footer class="cd-footer">
+
+                <div class="footer-logo-container">
+                    <img src="img/logo/logo_footer_gray.png" alt="푸터 회색로고">
+                    <div class="footer-address">
+                        <p>
+                            서울 금천구 가산 디지털 1로 70<br />
+                            독산역 2번 출구에서 773M<br />
+                            호서대 벤쳐 타워
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-name-container">
+                    <p> 김건우 / 김희준 <br />
+                        박행복 / 전명훈
+                    </p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

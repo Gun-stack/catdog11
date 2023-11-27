@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샵페이지</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="web-container ">
+        <div class="cd-container bg-white bg-dogs">
+            <header class="cd-header">
+                <div class="logo-icon-container">
+
+                    <div class="header-logo">
+                        <img src="img/logo/logo_color.png" alt="">
+                    </div>
+
+                    <div class="icon-container">
+                        <span class="header-btn"><a href="main.html">로그아웃</a></span>
+                        <i class="fa-solid fa-bars nav-icon" id="navIconBar"></i>
+                    </div>
+
+                </div>
+
+                <nav id="cdNavDropDown" class="cd-nav hidden">
+                    <ul class="nav-ul">
+                        <li class="nav-li"><a href="st-mypage.html">마이 페이지</a><i class="fas fa-clipboard-list"></i></li>
+                        <li class="nav-li"><a href="st-shopreg.html">샵 정보 등록/수정</a><i class="fas fa-store"></i></li>
+                        <li class="nav-li"><a href="st-dereg.html">디자이너 등록/수정</a><i class="fas fa-cut"></i></i></li>
+                        <li class="nav-li"><a href="st-reschadule.html">예약관리</a><i class="fas fa-clipboard-list"></i></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <main class="cd-main dis-center ">
+
+                <section class="section-header">
+                    <div class="section-header-container">
+                        <span class="section-header-text">마이 페이지</span>
+                    </div>
+                </section>
+
+                <section class="shop-main-section bg-white">
+                    <ul class="nav-ul">
+                        <li class="nav-li">
+                            <div>
+                                <i class="fas fa-caret-square-right mypage-arrow"></i>예약 관리
+                            </div>
+                            <i class="fas fa-cut"></i>
+                        </li>
+                    </ul>
+
+                    <section class="schedule-section">
+                        <hr class="divide-line">
+                        <input type="date" placeholder="날짜를 선택해주세요.">
+                        <hr class="divide-line">
+
+                        <div class="schedule-time-table">
+                            <div class="schedule-header"><span>날짜 : {0000-00-00} {월요일}</span></div>
+                            
+                            <div class="schedule-body">
+                                <div class="schedule-body-container">
+                                    <div class="resv-time">10 : 00</div>                                    
+                                    <a href="st-resvinfo.html">
+                                        <div class="resv-pet-name">
+                                            {예약한 동물이름}
+                                        </div>
+                                        <div class="resv-pet-spic">
+                                            {예약한 동물 종류}
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-body">
+                                <div class="schedule-body-container">
+                                    <div class="resv-time">12 : 00</div>
+                                    <div class="resv-pet-name">
+                                        {예약한 동물이름}
+                                    </div>
+                                    <div class="resv-pet-spic">
+                                        {예약한 동물 종류}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-body">
+                                <div class="schedule-body-container">
+                                    <div class="resv-time">14 : 00</div>
+                                    <div class="resv-pet-name">
+                                        {예약한 동물이름}
+                                    </div>
+                                    <div class="resv-pet-spic">
+                                        {예약한 동물 종류}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-body">
+                                <div class="schedule-body-container">
+                                    <div class="resv-time">16 : 00</div>
+                                    <div class="resv-pet-name">
+                                        {예약한 동물이름}
+                                    </div>
+                                    <div class="resv-pet-spic">
+                                        {예약한 동물 종류}
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </section>
+
+                    <section>
+
+                    </section>
+
+                </section>
+
+            </main>
+
+            <footer class="cd-footer">
+
+                <div class="footer-logo-container">
+                    <img src="img/logo/logo_footer_gray.png" alt="푸터 회색로고">
+                    <div class="footer-address">
+                        <p>
+                            서울 금천구 가산 디지털 1로 70<br />
+                            독산역 2번 출구에서 773M<br />
+                            호서대 벤쳐 타워
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-name-container">
+                    <p> 김건우 / 김희준 <br />
+                        박행복 / 전명훈
+                    </p>
+                </div>
+
+            </footer>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script src="js/navBar.js"></script>
+</body>
+
+</html>

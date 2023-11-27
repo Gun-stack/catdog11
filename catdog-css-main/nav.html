@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="web-container">
+        <div class="cd-container">
+            <header class="cd-header">
+                <div class="logo-icon-container">
+
+                    <div class="header-logo">
+                        <img src="img/logo/logo_color.png" alt="">
+                    </div>
+
+                    <div class="icon-container">
+                        <span class="header-btn"><a href="index.html">로그아웃</a></span>
+                        <i class="fa-solid fa-bars nav-icon" id="navIconBar"></i>
+                    </div>
+                    
+                </div>
+
+                <nav id="cdNavDropDown" class="cd-nav hidden">
+                    <ul class="nav-ul">
+                        <li class="nav-li">근처 샵 보기<i class="fa-solid fa-map"></i></li>
+                        <li class="nav-li">갤러리 구경하기<i class="fas fa-camera-retro"></i></li>
+                        <li class="nav-li">반려동물 등록하기<i class="fas fa-paw"></i></li>
+                        <li class="nav-li">예약 확인하기<i class="fas fa-clipboard-list"></i></li>
+                        <li class="nav-li">마이 페이지<i class="fas fa-user"></i></li>
+                    </ul>
+                </nav>
+
+            </header>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script>
+        const navIconBar = document.querySelector('#navIconBar');
+        const cdNavDropDown = document.querySelector('#cdNavDropDown');
+
+        navIconBar.addEventListener("click",(e)=>{
+            e.preventDefault;
+            cdNavDropDown.classList.toggle("hidden");
+        })
+    </script>
+</body>
+</html>

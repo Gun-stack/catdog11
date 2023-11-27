@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보호자 마이페이지</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="web-container">
+        <div class="cd-container bg-white bg-dogs">
+            <header class="cd-header">
+                <div class="logo-icon-container">
+
+                    <div class="header-logo">
+                        <img src="img/logo/logo_color.png" alt="">
+                    </div>
+
+                    <div class="icon-container">
+                        <span class="header-btn"><a href="main.html">로그아웃</a></span>
+                        <i class="fa-solid fa-bars nav-icon" id="navIconBar"></i>
+                    </div>
+
+                </div>
+
+                <nav id="cdNavDropDown" class="cd-nav hidden">
+                    <ul class="nav-ul">
+                        <li class="nav-li"><a href="nearby-shops.html">근처 샵 보기</a><i class="fa-solid fa-map"></i></li>
+                        <li class="nav-li"><a href="st-gallery.html">갤러리 구경하기</a><i class="fas fa-camera-retro"></i></li>
+                        <li class="nav-li"><a href="cl-petregform.html">반려동물 등록하기</a><i class="fas fa-paw"></i></li>
+                        <li class="nav-li"><a href="cl-reservation.html">예약 확인하기</a><i class="fas fa-clipboard-list"></i></li>
+                        <li class="nav-li"><a href="cl-mypage.html">마이 페이지</a><i class="fas fa-user"></i></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <main class="cd-main dis-center">
+
+                <section class="section-header">
+                    <div class="section-header-container">
+                        <span class="section-header-text">마이 페이지</span>
+                    </div>
+                </section>
+
+                <section class="shop-main-section bg-white">
+
+                    <ul class="nav-ul">
+                        <li class="nav-li">
+                            <div>
+                                <i class="fas fa-caret-square-right mypage-arrow"></i>예약 확인 하기
+                            </div>
+                            <i class="fas fa-store"></i>
+                        </li>
+                    </ul>
+
+                    <!-- 예약한 내역이 없다면 -->
+                    <form action="" class="shop-form-container">
+                        <div class="input-img-click sm-input-img">
+                            <p>예약한 내역이 없습니다</p>
+                        </div>
+                    </form>
+
+                    <!-- 예약한 내역이 있다면 -->
+                    <div class="reservation-container">
+                            <hr class="divide-line"/>
+                            <div class="re-shop-info">
+                                <span class="re-text">샵 이름 :</span> <span class="re-shop-name">{예약한 샵이름}</span> <span class="re-pet-name">{예약한 반려동물 이름}</span>
+                            </div>
+                            <div class="re-date">{0000-00-00}{00시}</div>
+                            <div class="re-btns"><span class="is-visit">{방문 전/후}</span> <button class="small-btn"><a href="cl-reservationcheck.html" class="btn-text">예약확인</a></button></div>
+                            <hr class="divide-line"/>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer class="cd-footer">
+
+                <div class="footer-logo-container">
+                    <img src="img/logo/logo_footer_gray.png" alt="푸터 회색로고">
+                    <div class="footer-address">
+                        <p>
+                            서울 금천구 가산 디지털 1로 70<br />
+                            독산역 2번 출구에서 773M<br />
+                            호서대 벤쳐 타워
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-name-container">
+                    <p> 김건우 / 김희준 <br />
+                        박행복 / 전명훈
+                    </p>
+                </div>
+
+            </footer>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script src="js/navBar.js"></script>
+</body>
+
+</html>

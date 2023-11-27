@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>반려동물 등록하기</title>
+</head>
+
+<body>
+    <!-- 웹버전 일때 컨테이너 -->
+    <div class="web-container">
+        <!-- 앱 컨테이너 -->
+        <div class="cd-container bg-white bg-dogs">
+            
+            <!-- 모달 알림창 -->
+            <div id="modalAlert" class="modal-alert hidden">
+                <div class="modal-body">
+                    <div class="modal-text">
+                        <h2>반려동물</h2>
+                        <p>등록 하시겠습니까?</p>
+                    </div>
+                    <div class="modal-btns">
+                        <button id="cancleBtn" class="small-btn btn-gray btn-text">취소</button>
+                        <button class="small-btn"><a href="cl-petreg.html" class="btn-text">등록하기</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 메인 컨텐트 -->
+            <main class="cd-main">
+
+                <!-- 로고 -->
+                <section class="main-logo">
+                    <img src="img/logo/logo_color.png" alt="댕냥꽁냥 로고">
+                    <span class="main-logo-text">반려동물 등록하기</span>
+                </section>
+
+                <!-- 폼 -->
+                <section class="form-section">
+                    <form action="#" method="post" class="form-css">
+                        <div class="form-container">
+                            <!-- 인풋 모여있는 컨테이너 -->
+                            <div class="input-container">
+
+                                <!-- 이미지 올리기 -->
+                                <div class="filebox">
+                                    <input type="petImgFile" id="petImgFileLink" accept="image/*"
+                                        class="input-box-style" value="사진을 올려주세요" />
+                                    <label for="petImgFile">반려동물 사진 올리기</label>
+                                    <input type="file" id="petImgFile" accept="image/*" />
+                                </div>
+                                <hr class="gray-line">
+
+                                <!-- 반려동물 이름 -->
+                                <input type="text" id="petName" name="petName" placeholder="반려동물 이름"
+                                    class="input-text boader-none">
+                                <hr class="gray-line">
+
+                                <!-- 반려동물 종류 (강아지인지 고양이 인지 체크) -->
+                                <div class="radio-container">
+                                    <label for="dogOrCat" class="radio-text">반려동물 종류</label>
+                                    <div class="radio-box">
+                                        <span> <input type="radio" id="dogOrCat" name="dogOrCat" value="dog"
+                                                checked>댕댕이</span>
+                                        <span> <input type="radio" id="dogOrCat" name="dogOrCat" value="cat">냥냥이</span>
+                                    </div>
+                                </div>
+                                <hr class="gray-line">
+
+                                <!-- 반려동물 나이 -->
+                                <input type="text" id="petAge" name="petName" placeholder="나이"
+                                    class="input-text boader-none">
+                                <hr class="gray-line">
+
+                                <!-- 반려동물 몸무게 -->
+                                <input type="text" id="petWeight" name="petWeight" placeholder="몸무게"
+                                    class="input-text boader-none">
+                                <hr class="gray-line">
+
+                                <!-- 반려동물 품종 (진돗개인진 뭐 그런) -->
+                                <input type="text" id="petSpecies" name="petSpecies" placeholder="반려동물 품종"
+                                    class="input-text boader-none">
+                                <hr class="gray-line">
+
+                                <!-- 반려동물 성별 -->
+                                <div class="radio-container">
+                                    <label for="petGender" class="radio-text">성별</label>
+                                    <div class="radio-box">
+                                        <span> <input type="radio" id="petGender" name="petGender" value="male"
+                                                checked>남아</span>
+                                        <span> <input type="radio" id="petGender" name="petGender"
+                                                value="female">여아</span>
+                                    </div>
+                                </div>
+                                <hr class="gray-line">
+
+                                <!-- 중성화여부 -->
+                                <div class="radio-container">
+                                    <label for="doIntake" class="radio-text">중성화 여부</label>
+                                    <div class="radio-box">
+                                        <span> <input type="radio" id="doIntake" name="doIntake" value="do"
+                                                checked>예</span>
+                                        <span> <input type="radio" id="doIntake" name="doIntake" value="not">아니요</span>
+                                    </div>
+                                </div>
+                                <hr class="gray-line">
+
+                            </div>
+
+                            <!-- submit 버튼 -->
+                            <div class="button-container">
+
+                                <button id="submit-btn" type="submit" class="main-btn btn-text magin-t-1">
+                                    동물 등록하기
+                                </button>
+                                <div class="main-btn  magin-t-1 btn-gray"><a href="cl-mypage.html"
+                                        class="btn-text">취소</a> </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+
+            </main>
+
+            <footer class="cd-footer">
+
+                <div class="footer-logo-container">
+                    <img src="img/logo/logo_footer_gray.png" alt="푸터 회색로고">
+                    <div class="footer-address">
+                        <p>
+                            서울 금천구 가산 디지털 1로 70<br />
+                            독산역 2번 출구에서 773M<br />
+                            호서대 벤쳐 타워
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-name-container">
+                    <p> 김건우 / 김희준 <br />
+                        박행복 / 전명훈
+                    </p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script>
+        document.getElementById('petImgFile').addEventListener('change', function () {
+            let fileName = document.getElementById('petImgFile').value;
+            document.querySelector('#petImgFileLink').value = fileName;
+        });
+    </script>
+</body>
+
+</html>

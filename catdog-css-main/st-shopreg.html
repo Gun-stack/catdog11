@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샵페이지</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="web-container ">
+        <div class="cd-container bg-white bg-dogs">
+            <header class="cd-header">
+                <div class="logo-icon-container">
+
+                    <div class="header-logo">
+                        <img src="img/logo/logo_color.png" alt="">
+                    </div>
+
+                    <div class="icon-container">
+                        <span class="header-btn"><a href="main.html">로그아웃</a></span>
+                        <i class="fa-solid fa-bars nav-icon" id="navIconBar"></i>
+                    </div>
+
+                </div>
+
+                <nav id="cdNavDropDown" class="cd-nav hidden">
+                    <ul class="nav-ul">
+                        <li class="nav-li"><a href="st-mypage.html">마이 페이지</a><i class="fas fa-clipboard-list"></i></li>
+                        <li class="nav-li"><a href="st-shopreg.html">샵 정보 등록/수정</a><i class="fas fa-store"></i></li>
+                        <li class="nav-li"><a href="st-dereg.html">디자이너 등록/수정</a><i class="fas fa-cut"></i></i></li>
+                        <li class="nav-li"><a href="st-reschadule.html">예약관리</a><i class="fas fa-clipboard-list"></i></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <main class="cd-main dis-center ">
+
+                <!-- 화면 타이틀 -->
+                <section class="section-header">
+                    <div class="section-header-container">
+                        <span class="section-header-text">마이 페이지</span>
+                    </div>
+                </section>
+
+                <section class="shop-main-section bg-white">
+
+                    <ul class="nav-ul">
+                        <li class="nav-li">
+                            <div>
+                                <i class="fas fa-caret-square-right mypage-arrow"></i><a href="#">샵 정보 등록 / 수정하기</a>
+                            </div>
+                            <i class="fas fa-store"></i>
+                        </li>
+                    </ul>
+
+                    <!-- 등록한 샵이 없다면 -->
+                    <form action="" class="shop-form-container">
+                        <div class="input-img-click sm-input-img">
+                            <p>
+                                <a href="st-shopregform.html">샵 등록하기 <i class="fas fa-plus-circle"></i></a>
+                            </p>
+                        </div>
+                    </form>
+
+                    <!-- 등록한 샵이 있다면 -->
+                    <div class="stylelist-content">
+                        <div class="shpo-list-li">
+                            <!-- 구분선 -->
+                            <hr class="divide-line">
+                            <!-- 샵 정보 컨테이너 -->
+                            <div class="nearby-shop-container">
+                                <div class="nearby-shop-address-container">
+                                    <!-- 샵 이미지 -->
+                                    <div class="nearby-shop-img-container">
+                                        <div class="nearby-shop-img"></div>
+                                    </div>
+                                    <!-- 주소 컨테이너-->
+                                    <div class="shop-text-container">
+                                        <h3 class="shop-name">KOSTA 살롱 10km</h3>
+                                        <div class="shop-adderss">
+                                            <p class="shop-adderss-text">
+                                                서울 금천구 가산 디지털 1로 70
+                                                호서대 벤쳐 타워
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="st-button-container">
+                            <button class="st-button"><a href="shoppagemain.html">바로가기</a><i class="fas fa-pen btn-icon"></i></button>
+                            <button class="st-button">편집<i class="fas fa-pen btn-icon"></i></button>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+            </main>
+
+            <footer class="cd-footer">
+
+                <div class="footer-logo-container">
+                    <img src="img/logo/logo_footer_gray.png" alt="푸터 회색로고">
+                    <div class="footer-address">
+                        <p>
+                            서울 금천구 가산 디지털 1로 70<br />
+                            독산역 2번 출구에서 773M<br />
+                            호서대 벤쳐 타워
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-name-container">
+                    <p> 김건우 / 김희준 <br />
+                        박행복 / 전명훈
+                    </p>
+                </div>
+
+            </footer>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script src="js/navBar.js"></script>
+
+</body>
+
+</html>

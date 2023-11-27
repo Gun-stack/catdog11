@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="web-container">
+        <div class="cd-container bg-white">
+            <header class="cd-header">
+                <div class="logo-icon-container">
+
+                    <div class="header-logo">
+                        <img src="img/logo/logo_color.png" alt="">
+                    </div>
+
+                    <div class="icon-container">
+                        <span class="header-btn"><a href="#">로그아웃</a></span>
+                        <i class="fa-solid fa-bars nav-icon" id="navIconBar"></i>
+                    </div>
+
+                </div>
+
+                <nav id="cdNavDropDown" class="cd-nav hidden">
+                    <ul class="nav-ul">
+                        <li class="nav-li"><a href="nearby-shops.html">근처 샵 보기</a><i class="fa-solid fa-map"></i></li>
+                        <li class="nav-li"><a href="st-gallery.html">갤러리 구경하기</a><i class="fas fa-camera-retro"></i>
+                        </li>
+                        <li class="nav-li"><a href="cl-petregform.html">반려동물 등록하기</a><i class="fas fa-paw"></i></li>
+                        <li class="nav-li"><a href="cl-reservation.html">예약 확인하기</a><i
+                                class="fas fa-clipboard-list"></i></li>
+                        <li class="nav-li"><a href="cl-mypage.html">마이 페이지</a><i class="fas fa-user"></i></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="section-header">
+                <div class="section-header-container">
+                    <span class="section-header-text">갤러리</span>
+                </div>
+            </section>
+
+            <main class="cd-main">
+
+                <nav class="main-nav">
+                    <ul class="main-nav-list">
+                        <li class="main-nav-list-text"><a href="st-gallery.html">스타일리스트 갤러리</a></li>
+                        <li class="main-nav-list-text"><a href="cl-gallery.html">회원 갤러리</a></li>
+                    </ul>
+                </nav>
+
+                <section class="st-gallery-section">
+
+                    <!-- 이미지 게시판 요소  -->
+                    <hr class="divide-line"/>
+                    <div class="st-gallery-view">
+                        <div class="st-gallery-view-img">
+                            <div class="view-gallery-profile-container magin-l-1">
+                                <img src="./img/gallrey-img/textimg.png" alt="프로필 이미지" class="view-profile-img">
+                                    <div class="view-img-nickname">튀김이랑달퐁이랑</div>
+                            </div>
+                            
+                            <div class="view-img-container">
+                                <img src="img/gallrey-img/textimg.png" alt="스타일리스트 사진" class="view-img" />
+                            </div>
+                            <div class="view-img-icons magin-l-1">
+                                <span><i class="fa-regular fa-heart"></i> {좋아요 수}</span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+
+                                <div class="view-comment">
+                                    <span class="view-comment-nickname">{덧글 쓴사람 닉네임} :</span>
+                                    <span class="view-comment-text">외않되</span>
+                                </div>
+                                <button class="view-comment-more">덧글 더보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divide-line"/>
+                    <!-- 이미지 게시판 요소 끝 -->
+
+                    <div>
+                        <button class="main-btn main-sm-btn btn-text">더보기</button>
+                    </div>
+                </section>
+
+
+            </main>
+
+            <footer class="cd-footer">
+
+                <div class="footer-logo-container">
+                    <img src="img/logo/logo_footer_gray.png" alt="푸터 회색로고">
+                    <div class="footer-address">
+                        <p>
+                            서울 금천구 가산 디지털 1로 70<br />
+                            독산역 2번 출구에서 773M<br />
+                            호서대 벤쳐 타워
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-name-container">
+                    <p> 김건우 / 김희준 <br />
+                        박행복 / 전명훈
+                    </p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+    <script src="js/navBar.js"></script>
+</body>
+
+</html>
