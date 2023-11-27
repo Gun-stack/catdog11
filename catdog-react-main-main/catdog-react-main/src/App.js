@@ -28,10 +28,10 @@ function App() {
       <Route path='/userlogin' element={<UserLogin/>}/>
       <Route path='/findid' element={<FindId/>}/>
       <Route path='/findpassword' element={<FindPassword/>}/>
+      
 
 
-
-      <Route path='/usermy/*' element={<UserMy/>}/>
+      <Route path='/usermy/' element={<UserMy/>}/>
       <Route path='/around/*' element={<Around/>}/>
 
       {/** Des 관련 라우터 */}

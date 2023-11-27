@@ -3,10 +3,25 @@ import Footer from "../screens/Footer";
 import Header from "../screens/Header";
 import PetReg from "./PetReg";
 import UserModi from "./UserModi";
-import { useState } from "react";
+import { useEffect, useState } from "react";   
+
+
+
+
 
 function UserMy() {
+    const [showSection, setShowSection] = useState(true);
     const [userNickname, setUserNickname] = useState('보호자 닉네임');
+
+
+
+useEffect(() => {
+    const userNickname = localStorage.getItem('userNickname');
+    setShowSection(true);
+    setUserNickname(userNickname);
+}, []);
+
+
     
     return (
         <div className="web-container">
@@ -14,7 +29,6 @@ function UserMy() {
 
                 <Header />
                 <main className="cd-main dis-center">
-
                     <section className="section-header">
                         <div className="section-header-container">
                             <span className="section-header-text">마이 페이지</span>
@@ -27,44 +41,44 @@ function UserMy() {
                             <div className="mypage-title-text">안녕하세요! <span className="color-nomal">{userNickname}</span>님!</div>
                         </div>
                     </section>
-
-                    <section className="shop-main-section bg-white">
-                        <ul className="nav-ul">
-
-                            <li className="nav-li ">
-                                <div>
-                                    <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="usermodi">보호자 정보 수정하기</Link>
-                                </div>
-                                <i className="fas fa-store"></i>
-                            </li>
-
-                            <li className="nav-li">
-                                <div>
-                                    <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="cl-reservation.html">예약 확인하기</Link>
-                                </div>
-                                <i className="fas fa-store"></i>
-                            </li>
-
-                            <li className="nav-li">
-                                <div>
-                                    <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="petreg">반려동물 등록/수정하기</Link>
-                                </div>
-                                <i className="fas fa-store"></i>
-                            </li>
-                        </ul>
-
+                    
                         <Routes>
                             <Route path='petreg' element={<PetReg />} />
                             <Route path='usermodi/:num' element={<UserModi />} />
-                        </Routes>
-                    </section>
-                </main>
+                        </Routes>   
+                                                
+                        <section className={`shop-main-section ${showSection ? "" : "hidden"} bg-white`} >
+                            <ul className="nav-ul">
+                                <li className="nav-li ">
+                                    <div>
+                                        <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="usermodi" >보호자 정보 수정하기</Link>
+                                    </div>
+                                    <i className="fas fa-store"></i>
+                                </li>
+                                <li className="nav-li">
+                                    <div>
+                                        <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="cl-reservation.html">예약 확인하기</Link>
+                                    </div>
+                                    <i className="fas fa-store"></i>
+                                </li>
+                                <li className="nav-li">
+                                    <div>
+                                        <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="petreg"  >반려동물 등록/수정하기</Link>
+                                    </div>
+                                    <i className="fas fa-store"></i>
+                                </li>
+                            </ul>
 
-                <Footer />
+                            
+                        </section>
+                        
+                    </main>
 
+                    <Footer />
+
+                </div>
             </div>
-        </div>
-    );
-}
+        );
+    }
 
-export default UserMy;
+    export default UserMy;
