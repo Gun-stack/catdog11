@@ -35,6 +35,10 @@ useEffect(() => {
                         </div>
                     </section>
 
+                        <Routes >
+                            <Route path='petreg' element={<PetReg />} />
+                            <Route path='usermodi/:num' element={<UserModi />} />
+                        </Routes>   
                     {/* 로그인한 보호자의 닉네임이 보입니다 */}
                     <section className="mypage-title-section">
                         <div className="mypage-title-container">
@@ -42,10 +46,6 @@ useEffect(() => {
                         </div>
                     </section>
                     
-                        <Routes>
-                            <Route path='petreg' element={<PetReg />} />
-                            <Route path='usermodi/:num' element={<UserModi />} />
-                        </Routes>   
                                                 
                         <section className={`shop-main-section ${showSection ? "" : "hidden"} bg-white`} >
                             <ul className="nav-ul">
@@ -63,7 +63,7 @@ useEffect(() => {
                                 </li>
                                 <li className="nav-li">
                                     <div>
-                                        <i className="fas fa-caret-square-right mypage-arrow"></i><Link to="petreg"  >반려동물 등록/수정하기</Link>
+                                        <i className="fas fa-caret-square-right mypage-arrow"></i><Link to= "petreg"  >반려동물 등록/수정하기</Link>
                                     </div>
                                     <i className="fas fa-store"></i>
                                 </li>
